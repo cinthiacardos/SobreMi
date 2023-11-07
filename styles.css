@@ -1,0 +1,40 @@
+/* Este es un comentario en css*/
+
+/*selector universal. Selecciona todos los elementos*/
+
+*{
+    background-color: #7edbdd;
+}
+/*Selectores de tipo
+selecciona todos los elementos con ese nombre*/
+
+h1{
+    font-family:'Kenia', sans-serif;
+}
+/*body {
+   background-color: aqua;
+}
+p {
+    color: blue;
+} */
+
+table{ 
+     border: 3px dashed green;
+     border-spacing: 10px;
+     border-collapse: collapse ;
+
+    }
+
+
+.tamales-header-items {
+    border:5px dotted blue;
+    border-right:4px solid purple;
+    border-left:6x solid yellow;
+    border: 4px dotted white;
+
+}
+
+td {
+    border: 2px solid red;
+}
+

@@ -1,0 +1,8 @@
+#tabla, #tabla td, #tabla th {
+ border: 2px solid blue;
+ border collapse: collapse;
+}
+
+.precio  td, .dias {
+    text-align: center;
+}
