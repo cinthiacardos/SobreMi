@@ -1,0 +1,85 @@
+/*se establecen variables*/ 
+
+:root{
+    --blue1: blue;
+    --blue2:#afeeee;
+}
+
+/*reiniciar lso estilos que vienen por defecto del navegador
+Box-sizing (tamaño de caja) Establece como se calcula el ancho y alto de un elemento*/
+ 
+html{
+    box-sizing: border-box;
+}
+*,
+*:before
+*:after{
+    box-sizing: inherit;
+}
+
+/*propiedad display: tiene que ver con elementos en linea y bloque. 
+Block,inline */
+body{
+    background:
+    /*Fondo con degradado lineal*/ 
+    linear-gradient(180deg,var(--blue2)0%,var(--blue1)100%)
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*estilizar barra de navegacion*/
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px
+    padding: 15px;
+    font-size: 20x;
+}
+
+.links{
+    text-decoration: none;
+    color: black;
+}
+
+/*referenciamos el id del article nueva seccion*/
+#cards-section{ 
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.card-container{
+    border: 4px solid blue;
+    box-shadow: 0 2x 4x rgba(0,2,2,2,2,5);
+    flex:0 0 30%;
+    max-width: 100%;
+    margin: 20px;
+    padding: 20xp;
+    background-color: pink;
+}
+
+.card-image{
+    width: 100%;
+/* 4 valores: dezplazamiento horizontal, vertical, difuminacion */>
+    filter: drop-shadow( 10px 50xp red);
+}
+
+.card-title {
+    font-size: 30xp;
+    color:whitesmoke;    
+}
+
+/* Pseudoclase */
+h3: hover {
+    blackground-color: black;
+
+}

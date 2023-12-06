@@ -14,21 +14,57 @@
         
     <main>
             <section>
-                <form action ="" method="post"> <!--En el activon colocamos la url a donde mandaremos la info del formulario, En atributo method indicamos el tipo de metodo http que utilizaremos-->
+                <form action ="https://formsubmit.co/your@email.com" method="post"> <!--En el activon colocamos la url a donde mandaremos la info del formulario, En atributo method indicamos el tipo de metodo http que utilizaremos-->
 
                     <fieldset> <!--permite agrupar por campos--> 
-                        <legend>Datos basicos de contactos </legend> Nombre: <input type="text" placeholder="Moreno">
+                        <legend>Datos basicos de contactos </legend> Nombre: <input type="text" placeholder="Nancy">
                         <br>
+                         Apellido: <input type="text" placeholder="Moreno">
+                         <br>  
                         correo electronico: <input type="mall" placeholder="cardoscinthia@gmail.com">
                         <br>
-                        <input type="submit">
+                        Telefono <input type="mall" placeholder="450405965">
                         <br>
-                        <button type="submit">
-                            ¡enviar Ya!
-                        </button>
-                    
                     </fieldset>
 
+                    <fieldset>
+                        <legend>Datos del pedido</legend>Numero de tamales: <input type="number" min="30" max="300" required>
+                        <br>
+                        Litros de atole: <input type="number" min="3" max="50">
+                        <br>
+                        Fecha del evento: <input type="date" required>
+                    </fieldset>
+                    <fieldset>
+                       <legend> Datos del envio</legend> <select name="stories" id="stores">
+                        <option value="Sucursal Atizapan de Zaragoza"> Sucursal Atizapan de Zaragoza </option>
+                        <option value="Sucursal Ecatepec">Sucursal Ecatepec </option>
+                        <option value="Sucursal Magdalena Contreras"> Sucursal Magdalena Contreras </option>
+                       </select>
+                       <br>
+
+                       <!--Le damos opcion al usuario para elegio apartir de las 3 primeras letras-->
+
+                       <input list="branch">
+                       <datalist id="branch">
+                        <option value="Sucursal Atizapan de Zaragoza"> Sucursal Atizapan de Zaragoza </option>
+                        <option value="Sucursal Ecatepec">Sucursal Ecatepec </option>
+                        <option value="Sucursal Magdalena Contreras"> Sucursal Magdalena Contreras </option>
+                       </datalist>
+                       <br>
+                       <label for="pick-up">
+                        <input id="pick-up" type="radio" name="type-of-delivery"> Recoger en sucursal 
+                       </label>
+
+                       <label for="delivery"> 
+                       <input id="delivery" type="radio" name="type-of-delivery"> Envio a domicilio
+                       </label>
+                       <br>
+
+                    <!--Casilla de vierificacion-->
+                    <input type="checkbox" required> Acepto los terminos y condiciones
+                    <br>
+                    <button type="submit">Vamos nos recio con los tamales</button>
+                    </fieldset>
                 </form>
             </section>
         </main>
